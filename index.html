@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: 
+            url('https://thumbs.dreamstime.com/z/light-gold-background-paper-29108820.jpg');
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Admin Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Orders</h2>
+        <form action="" class="form-inline" id="addForm">
+            <div class="form-group">
+                <label for="amount">Selling Price:</label>
+                <input type="text" class="form-control" id="amount">
+            </div>
+            <div class="form-group">
+                <label for="description">Product Name:</label>
+                <input type="text" class="form-control" id="description">
+            </div>
+            <div class="form-group">
+                <label for="category">Category:</label>
+                <select id="category" class="form-control form-control-lg">
+                    <option>Electronics</option>
+                    <option>Food</option>
+                    <option>Skincare</option>
+
+                </select>
+            </div>
+            <input type="submit" class="btn btn-success" id = 'submit'>
+        </form>
+        <h1 style="color:red">Products</h1>
+        <h2 style="color:brown">Electronics Item List</h2>
+
+        <ul id="electronics" class="list-group" >
+           
+        </ul>
+        <h2 style="color:brown">Food Item List</h2>
+
+        <ul id="food" class="list-group" >
+           
+        </ul>
+        <h2 style="color:brown">Skincare Item List</h2>
+
+        <ul id="skincare" class="list-group" >
+           
+        </ul>
+       
+    </div>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.2/axios.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
